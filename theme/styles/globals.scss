@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;600&display=swap");
+
+body {
+    background-color: #171c2a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.currencies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+
+        width: 14em;
+        height: 14em;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin: 0 20px 20px 0;
+
+        background: linear-gradient(
+            to right bottom,
+            rgba(69, 71, 78, 0.07),
+            rgba(118, 140, 182, 0.19)
+        );
+        backdrop-filter: contrast(105%);
+
+        .head {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-right: 5px;
+
+                img {
+                    width: 35;
+                    height: 35px;
+                    margin-right: 8px;
+                    border-radius: 30px;
+                }
+
+                h3 {
+                    color: #fff;
+                    font-family: "Urbanist";
+                }
+            }
+
+            .symbol {
+                color: #7b87df;
+                font-family: "Urbanist";
+                font-weight: 300;
+                font-size: 1.05em;
+            }
+        }
+
+        .body {
+            flex: 4;
+        }
+
+        .footer {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Urbanist";
+            h2 {
+                color: #fff;
+                font-size: 1.9em;
+            }
+
+         
+
+            .up {
+                color: #56e39f;
+            }
+
+            .down {
+                color: #ef6f6c;
+            }
+        }
+    }
+}
